@@ -1,5 +1,6 @@
-FROM python:3.6
-MAINTAINER Paulus Schoutsen <Paulus@PaulusSchoutsen.nl>
+FROM resin/raspberrypi3-python:latest
+ENV INITSYSTEM on
+MAINTAINER John Northrup <john@8bitwizard.net>
 
 # Uncomment any of the following lines to disable the installation.
 #ENV INSTALL_TELLSTICK no
