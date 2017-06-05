@@ -1,14 +1,14 @@
-FROM resin/raspberrypi3-python:latest
+FROM resin/raspberrypi3-debian:latest
 ENV INITSYSTEM on
 MAINTAINER John Northrup <john@8bitwizard.net>
 
 # Uncomment any of the following lines to disable the installation.
-#ENV INSTALL_TELLSTICK no
-#ENV INSTALL_OPENALPR no
-#ENV INSTALL_FFMPEG no
+ENV INSTALL_TELLSTICK no
+ENV INSTALL_OPENALPR no
+ENV INSTALL_FFMPEG no
 #ENV INSTALL_OPENZWAVE no
 #ENV INSTALL_LIBCEC no
-#ENV INSTALL_PHANTOMJS no
+ENV INSTALL_PHANTOMJS yes
 #ENV INSTALL_COAP_CLIENT no
 
 VOLUME /config
