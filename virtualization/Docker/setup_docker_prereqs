@@ -15,8 +15,9 @@ INSTALL_COAP_CLIENT="${INSTALL_COAP_CLIENT:-yes}"
 PACKAGES=(
   # build-essential is required for python pillow module on non-x86_64 arch
   build-essential
-  # We need pyton3
+  # We need pyton3 and headers for compilation
   python3
+  python3-dev
   # homeassistant.components.image_processing.openalpr_local
   libxrandr-dev
   # homeassistant.components.device_tracker.nmap_tracker
